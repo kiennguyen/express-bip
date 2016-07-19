@@ -1,0 +1,31 @@
+{
+  "name": "express-bip",
+  "version": "0.0.1",
+  "description": "Express 4.x app using Passport for authentication via BIP OpenID Connect.",
+  "keywords": [
+    "example",
+    "express",
+    "passport"
+  ],
+  "author": "Kien Nguyen",
+  "license": "Unlicense",
+  "homepage": "https://github.com/kiennguyen/express-bip",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kiennguyen/express-bip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kiennguyen/express-bip/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.3.5",
+    "ejs": "^2.3.3",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "morgan": "^1.6.1",
+    "passport": "^0.2.2",
+    "passport-bip": "^0.0.1"
+  }
+}
