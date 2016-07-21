@@ -94,4 +94,15 @@ app.get('/profile',
     res.render('profile', { user: req.user });
   });
 
+app.get('/logout',
+  function(req, res){
+    res.redirect('https://account.stage.bonnier.news/bip/logout?redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback%2Flogout&appId=exp-hk-www');
+  });
+
+app.get('/callback/logout',
+  function(req, res) {
+    req.session.destroy();
+    res.redirect('/');
+  });
+
 app.listen(3000);
